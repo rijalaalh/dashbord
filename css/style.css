@@ -567,6 +567,11 @@ body{
     -o-border-radius: 5px;
     color: red;
     position: relative;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
 }
 
 .features .box-features .quality button::before{
@@ -580,11 +585,11 @@ body{
     -ms-transition: 0.5s;
     -o-transition: 0.5s;
     z-index: -1;
+    left: 0;
+    top:0;
 }
 .features .box-features .box:hover button::before{
     width: 100%;
-    left: 0;
-    top: 0;
 }
 .features .box-features .box:hover button{
     color: white;
@@ -680,6 +685,8 @@ body{
     -ms-transition: 0.5s;
     -o-transition: 0.5s;
     z-index: -1;
+    left: 0;
+    top:0;
 }
 .features .box-features .passion button{
     border:4px solid blue;
@@ -703,6 +710,8 @@ body{
     -ms-transition: 0.5s;
     -o-transition: 0.5s;
     z-index: -1;
+    top:0;
+    left: 0;
 }
 /*end features*/
 /*testimonials*/
