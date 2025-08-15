@@ -788,6 +788,28 @@ body{
     -ms-transition: 0.3s;
     -o-transition: 0.3s;
 }
+@media (max-width:786px) {
+    .team .container .content .box-team{
+        width: 80%;
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+}
+}
+@media (min-width:786px) and (max-width:911px) {
+    .team .container .content .box-team{
+        width: 90%;
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+}
+}
 .team .container .content .box-team::after{
     content: '';
     position: absolute;
@@ -861,6 +883,7 @@ body{
     margin-top: 10px;
 }
 /*end team*/
+/*service*/
 .service{
     padding: var(--main-padding) 0px;
     background-color: #eee;
@@ -880,6 +903,24 @@ body{
     -moz-transition: 0.3s;
     -ms-transition: 0.3s;
     -o-transition: 0.3s;
+    position:relative;
+}
+.service .content .box-service::before{
+    content: '';
+    height: 3px;
+    background-color: var(--main-color);
+    position: absolute;
+    width: 0%;
+    left: 50%;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+.service .content .box-service:hover:before{
+    width: 100%;
+    left: 0;
 }
 .service .content .box-service:hover{
     transform: translateY(-15px);
@@ -936,6 +977,7 @@ body{
     text-decoration: none;
     color: var(--main-color);
 }
+/*end service*/
 /*skills*/
 .skills{
     padding: var(--main-padding) 0px;
