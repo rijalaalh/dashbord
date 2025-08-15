@@ -767,5 +767,97 @@ body{
 .testimonials .content .personne p{
     line-height: 1.5;
 }
+/*team*/
+.team{
+    padding: var(--main-padding) 0px;
+}
+.team .container .content{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 70px;
+    margin-top: 30px;
+}
+.team .container .content .box-team{
+    background-color: #eee;
+    padding: 80px 20px;
+    border-radius: 20px;
+    position: relative;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+.team .container .content .box-team::after{
+    content: '';
+    position: absolute;
+    height: 100%;
+    background: #afafaf6f;
+    width:0%;
+    top: 0;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    right: 0;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+.team .container .content .box-team:hover::after{
+    width: 100%;
+}
+.team .container .content .box-team .image{
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    
 
-
+}
+.team .container .content .box-team .image img{
+    width: 100%;
+    position: relative;
+    border-radius: 20px;
+    width: 100%;
+    left: -40px;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    z-index: 3;
+}
+.team .container .content .box-team:hover .image img{
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+}
+.team .container .content .box-team .image .links{
+    z-index: 3;
+}
+.team .container .content .box-team .image .links i{
+    margin-bottom: 20px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    cursor: pointer;
+}
+.team .container .content .box-team .image .links i:hover{
+    color: var(--main-color);
+}
+.team .container .content .box-team .text h3{
+    margin-top: 20px;
+    color: var(--main-color);
+}
+.team .container .content .box-team:hover .text h3{
+    color: #757575;
+}
+.team .container .content .box-team .text p{
+    margin-top: 10px;
+}
+/*end team*/
