@@ -638,31 +638,21 @@ body{
     height: 101px;
     background-color: white;
     position: absolute;
-    top: -117px;
+    top: -120px;
+    left: 0;
     z-index: 2;
-    left: 215px;
-    transform: skew(282deg);
-    -webkit-transform: skew(282deg);
-    -moz-transform: skew(282deg);
-    -ms-transform: skew(282deg);
-    -o-transform: skew(282deg);
-    transition: 0.5s;
-    -webkit-transition: 0.5s;
-    -moz-transition: 0.5s;
-    -ms-transition: 0.5s;
-    -o-transition: 0.5s;
+    clip-path: polygon(0% 90%,100% 0%,100% 100%,0% 100%);
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
 }
 .features .box-features .box:hover h1::before{
     content: '';
-    width: 100%;
-    height: 101px;
     background-color: white;
     position: absolute;
-    top: -121px;
-    z-index: 2;
-    left: -214px;
-    transform: skew(282deg);
-    -webkit-transform: skew(77deg);
+    clip-path: polygon(0% 90%,0% 0%,100% 100%,0% 100%);
 }
 .features .box-features .time button{
     border:4px solid  green;
