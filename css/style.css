@@ -1079,32 +1079,34 @@ body{
     -moz-transition: 0.3s;
     -ms-transition: 0.3s;
     -o-transition: 0.3s;
+    z-index: 3;
 }
 .works .content .box-works::after{
     content: '';
     border-radius: 3px;
     position: absolute;
-    left: 46%;
-    top: 40%;
-    background-color: #eeeeee69;
+    left: 50%;
+    top: 50%;
+    background-color: #d7d7d769;
     transition: 0.3s;
     -webkit-transition: 0.5s;
     -moz-transition: 0.3s;
     -ms-transition: 0.3s;
     -o-transition: 0.3s;
-    padding: 20px;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
     -o-border-radius: 3px;
     opacity: 0;
+    width: 0%;
+    z-index: -1;
+    height: 0%;
 }
 .works .content .box-works:hover::after{
-    transform: scale(12,4.5);
-    -webkit-transform: scale(12,4.5);
-    -moz-transform: scale(12,4.5);
-    -ms-transform: scale(12,4.5);
-    -o-transform: scale(12,4.5);
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
     opacity: 1;
 }
 .works .content .box-works .icon{
@@ -1278,7 +1280,7 @@ body{
 .pricing .prix{
     display: grid;
     margin-top: 50px;
-    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
     gap: 30px;
 }
 .pricing .prix .box-pricing{
